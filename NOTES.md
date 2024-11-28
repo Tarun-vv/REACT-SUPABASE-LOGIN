@@ -7,3 +7,22 @@
 3. Create routes
 4. Set up react query -> use v4 or @4
 5. set up of supabase
+
+## APPLICATION
+
+1. create login email and password states
+2. create a user in supabase: go to authentication tab // go to providers and click on email > and for development purpose turn off verification under email -> and hit save
+3. in users tab // add user -> give email: test@emaple.com and set password: test@123 and create user
+
+### connecting supabase to react app -> DEFAULT FOR TEST LOGIN IN ALL APPS
+
+1. go to API DOCS -> user management -> copy code of Log in user with email and password
+2. make apiAuth.js service and make the function -> check code
+3. for demo set state of email and password in Login.js file to 'test@emaple.com' and 'test@123'
+4. make useLogin.js functionality in react query
+5. implement in Login.js
+6. should go to main page on login
+
+### protecting routes
+
+1, make ProtectedRoute component and wrap AppLayout under it routes under that components
