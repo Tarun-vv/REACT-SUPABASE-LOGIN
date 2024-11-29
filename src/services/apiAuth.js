@@ -11,3 +11,23 @@ export async function login({ email, password }) {
   console.log(data);
   return data;
 }
+
+export async function getCurrentUser() {
+  // checking for active session
+  const { data: session } = await supabase.auth.getSession();
+
+  if (!session.session) return null;
+
+  // getting user
+  const { data, error } = await supabase.auth.getUser();
+
+  if (error) throw new Error(error.message);
+
+  return data?.user;
+}
+
+export async function logout() {
+  const { error } = await supabase.auth.signOut();
+  
+  if (error) throw new Error(error.message);
+}

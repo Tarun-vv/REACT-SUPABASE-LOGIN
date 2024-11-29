@@ -1,5 +1,12 @@
+import LogOutBtn from "../LogOutBtn";
+
 function MainPage() {
-  return <div>YOU LOGGED SHAKALA ! PROUD OF YOU</div>;
+  return (
+    <div>
+      <h1>You LOGGED IN</h1>
+      <LogOutBtn />
+    </div>
+  );
 }
 
 export default MainPage;

@@ -25,4 +25,15 @@
 
 ### protecting routes
 
-1, make ProtectedRoute component and wrap AppLayout under it routes under that components
+1, make ProtectedRoute component and wrap AppLayout under it routes under that components 
+2. implement getCurrentUser function in apiAuth.js 
+3. create useUser hook in react query 
+4. add functionality in ProtectedRoute // watch bug lecture just to make sure
+5. for optimization -> add following to useLogin marked with #fff (dont use)
+
+### log out
+
+1. make Log out button and add it to main page
+2. add logic to apiAuth.js
+3. make react query functionality 
+4. add to button
