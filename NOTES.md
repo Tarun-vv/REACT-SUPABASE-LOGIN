@@ -10,6 +10,8 @@
 
 ## APPLICATION
 
+## LOG IN AND OUT
+
 1. create login email and password states
 2. create a user in supabase: go to authentication tab // go to providers and click on email > and for development purpose turn off verification under email -> and hit save
 3. in users tab // add user -> give email: test@emaple.com and set password: test@123 and create user
@@ -25,15 +27,29 @@
 
 ### protecting routes
 
-1, make ProtectedRoute component and wrap AppLayout under it routes under that components 
-2. implement getCurrentUser function in apiAuth.js 
-3. create useUser hook in react query 
-4. add functionality in ProtectedRoute // watch bug lecture just to make sure
-5. for optimization -> add following to useLogin marked with #fff (dont use)
+1, make ProtectedRoute component and wrap AppLayout under it routes under that components 2. implement getCurrentUser function in apiAuth.js 3. create useUser hook in react query 4. add functionality in ProtectedRoute // watch bug lecture just to make sure 5. for optimization -> add following to useLogin marked with #fff
 
 ### log out
 
 1. make Log out button and add it to main page
 2. add logic to apiAuth.js
-3. make react query functionality 
+3. make react query functionality
 4. add to button
+
+## SIGNING IN AND OUT
+
+1. add conditions to signup form using hook form
+2. add function to apiAuth
+3. make react query
+4. add to sign up form
+5. in supabase -> go to URL CONFIGURATION: set the 1st link to main-page URL
+   redirect URL to normal URL without aything like 'localhost:3000'
+6. set back confirm email and ur done
+
+### updating signed in data
+
+1. make updateData.js and updatePassword.js files in signup folder
+2. set up avatar bucket in supabase and the policies
+3. make react query stuff called useUpdate.js
+4. make the update user data component and the header menu
+5. no need to password
